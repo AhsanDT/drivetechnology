@@ -10,8 +10,8 @@ const ServiceItem = ({ service, id }) => {
       <div className="img-container w-full  sm:min-w-[200px] sm:h-[218px]  lg:w-[371px] lg:h-[384px]">
         <Image
           src={service?.thumbnail?.data?.attributes?.url}
-          width={100}
-          height={100}
+          width={500}
+          height={500}
           alt="img"
         />
       </div>

@@ -8,11 +8,12 @@ const OurWorkItem = ({ id, portfolio }) => {
         href={`/portfolio/${portfolio?.slug}`}
         className="img-container sm:w-[352px] h-[262px]"
       >
+        
         <Image
           src={portfolio?.thumbnail?.data?.attributes?.url}
           alt="portfolio-img"
-          width={100}
-          height={100}
+          width={600}
+          height={600}
         />
       </Link>
       <p className="text-[24px] font-oswald font-bold text-white">

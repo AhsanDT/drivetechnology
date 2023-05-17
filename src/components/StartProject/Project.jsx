@@ -66,7 +66,7 @@ const Project = () => {
           </h1>
           <div className="w-full overflow-hidden pb-[50px]">
             <InlineWidget
-              url="https://calendly.com/drivetechandy/30min"
+              url="https://calendly.com/drivetechnology/30-minute-meeting-linconnection-clone-1"
               styles={{ height: "750px" }}
             />
           </div>

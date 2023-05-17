@@ -12,8 +12,10 @@ const Hero = ({ heroBox }) => {
     <section className="w-full justify-center relative min-h-[100vh]">
       <div className="w-full xl:max-w-[1440px]   ">
         <div className={`img-container w-full h-[101%] absolute z-[-1]`}>
+          
           {/* <Image src={heroImage} alt="img" /> */}
           {heroBox && (
+            
             <Image
               src={heroBox?.attributes?.image?.data?.attributes?.url}
               alt="img"
