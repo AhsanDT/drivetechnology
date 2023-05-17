@@ -43,8 +43,8 @@ const Blogs = ({ blogs, totalCount, onPageChange }) => {
                             blog?.attributes?.thumbnail?.data?.attributes?.url
                           }
                           alt="img"
-                          width={100}
-                          height={100}
+                          width={600}
+                          height={600}
                         />
                       </div>
                       <div className="px-[27px]">
