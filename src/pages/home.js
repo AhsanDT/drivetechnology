@@ -66,7 +66,6 @@ const HomePage = () => {
         portfolioName,
         6
       );
-
       setPortfolios(portfoliosResponse?.data?.data);
     } catch (error) {
       console.log(error);

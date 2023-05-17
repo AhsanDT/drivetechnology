@@ -89,7 +89,6 @@ const Services = ({ services, name, image }) => {
                       key={service?.attributes?.id}
                       id={service?.attributes?.title?.replaceAll(" ", "-")}
                     >
-                      {console.log("SERVICE",service)}
                       <ServiceItem
                         service={service?.attributes}
                         id={service?.id}

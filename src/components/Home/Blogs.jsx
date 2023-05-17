@@ -39,8 +39,8 @@ const Blogs = ({ blogs }) => {
                             blog?.attributes?.thumbnail?.data?.attributes?.url
                           }
                           alt="img"
-                          width={600}
-                          height={600}
+                          width={100}
+                          height={100}
                         />
                       )}
                     </div>
