@@ -1,0 +1,40 @@
+.heroImage {
+  background-image:
+  /* linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(250, 209, 209, 0.73)), */
+  url('../assets/bg-images/BG3.png');
+  width: 100%;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  height: 110%;
+  position: absolute;
+}
+.box:after {
+  content: " ";
+  border-bottom: 20vh solid #424248;
+  border-right: 100vw solid transparent;
+  width: 0;
+  position: absolute;
+  bottom: -9px;
+}
+
+
+
+.wave {
+
+  animation: wave 2s   ease-in-out;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 1000px;
+  }
+  25%{
+    margin-top: 100px;
+  }
+  50%{
+    margin-top: -50px;
+  }
+  100% {
+    margin-right: 1000px;
+  }
+}

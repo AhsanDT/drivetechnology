@@ -1,0 +1,63 @@
+/* PeaceMaker Styling Starts here */
+.Peacemaker-img{
+    background-image: url(../assets/Assets/peaceMaker\ Image.png);
+    /* background-image: url(../Assets//peaceMaker\ Image.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+}
+.peacemaker-main {
+    background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+/* background-image: linear-gradient(180deg, #448297 0%, #288FB1 47.92%, #265565 100%); */
+/* .Numbers-main{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+/* PeaceMaker Styling Ends here */
+
+/* About Project Styling starts here */
+.AboutProject-main{
+    background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+/* About Project Styling Ends here */
+
+/* Project Timeline Styling starts here */
+.Project-timeline-main{
+    background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+/* Project Timeline Styling Ends here */
+
+/* style guide styling starts here */
+.styleguide-main{
+    background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+.Typography-main{
+    background: var(--Background-Peacemaker, linear-gradient(180deg, #2b7c97 0%, #288FB1 47.92%, #265565 100%));
+}
+.card-main{
+    background: var(--Background-Peacemaker, linear-gradient(180deg, #3f8ca6 0%, #3f8ca6 0%, #3f8ca6 0%));
+}
+.card{
+        background: var(--Background-Peacemaker, linear-gradient(180deg, #a9c3cc 0%, #a9c3cc 0%, #a9c3cc 0%));
+}
+/* style guide styling Ends here */
+
+/* Problem statement styling starts here */
+.Problemstatement-main{
+    background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+/* Problem statement styling Ends here */
+
+/* App Store styling starts here */
+.App-store-main{
+    background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+/* App Store styling Ends here */
+
+/* Footer Styling Starts here */
+.Footer-main{
+    background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
