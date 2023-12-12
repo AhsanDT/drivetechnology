@@ -5,7 +5,7 @@ import ScrollToTop from "../ScrollToTop";
 import Footer from "./Footer";
 import Header from "./Header";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, showFooter = true , showIdea = true}) => {
   const [services, setServices] = useState([]);
   const [developments, setDevelopments] = useState([]);
 
@@ -29,8 +29,8 @@ const Layout = ({ children }) => {
       <Header services={services} developments={developments} />
       <ScrollToTop />
       {children}
-      <Idea title="Achieve Your Goals Faster With Us" />
-      <Footer services={services} developments={developments} />
+      {showIdea && <Idea title="Achieve Your Goals Faster With Us" />}
+      {showFooter && <Footer services={services} developments={developments} />}
     </>
   );
 };

@@ -26,10 +26,10 @@ const BlogDetails = ({ blog, onLike }) => {
               </div>
               <div>
                 <div className="pt-[20px]  flex flex-col gap-y-[21px] justify-center md:items-center">
-                  <div className="flex items-center  mt-[21px]">
+                  {/* <div className="flex items-center  mt-[21px]">
                     <div className=" bg-[#3C3C3C] w-[68px] h-[2px]"></div>
                     <div className=" bg-[#3C3C3C] w-[12px] h-[12px] rounded-full"></div>
-                  </div>
+                  </div> */}
                   <h1 className="text-[32px] font-poppins font-bold text-[#00000S0] lg:text-[48px]  md:text-center">
                     {blog?.attributes?.title}
                   </h1>
@@ -40,10 +40,12 @@ const BlogDetails = ({ blog, onLike }) => {
                 <div className="img-container py-[48px]">
                   {blog?.attributes && (
                     <Image
-                      src={blog?.attributes?.thumbnail?.data?.attributes?.url}
+                    // unoptimized={true}
+                    // src={`http://localhost:1337${blog?.attributes?.thumbnail?.data?.attributes?.url}`}
+                    src={blog?.attributes?.thumbnail?.data?.attributes?.url}
                       alt="img"
-                      width={1000}
-                      height={1000}
+                      width={100}
+                      height={100}
                     />
                   )}
                 </div>

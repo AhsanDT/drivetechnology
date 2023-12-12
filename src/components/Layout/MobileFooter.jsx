@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import FooterIcon from "./FooterIcon";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo1.png";
 
 const MobileFooter = () => {
   return (
@@ -37,23 +37,18 @@ const MobileFooter = () => {
           <li className="pb-[25px]">Legal</li>
         </ul>
       </div>
-      <div className="flex justify-center gap-x-[40px]">
+      {/* <div className="flex justify-start gap-x-[40px]">
         <Link href={"/termsandconditions"}><h4>Terms of use</h4></Link>
         <Link href={"/privacypolicy"}><h4>Privacy</h4></Link>
-      </div>
-      <div className="flex gap-x-2 justify-center items-center">
+      </div> */}
+      <div className="flex gap-x-2 justify-start items-center">
         <Link href={"/"}>
-          <Image src={logo} width={55} height={48} />
+          <Image src={logo} className="my-4" />
         </Link>
-        <span className="text-[16px] sm:text-[20px] text-white font-bold  md:hidden lg:block">
-          Drive Technology
-        </span>
       </div>
       <div>
         {" "}
-        <span className="text-[10px] font-normal flex justify-center">
-          2023 DriveTech. All Rights Reserved.
-        </span>
+
       </div>
     </>
   );

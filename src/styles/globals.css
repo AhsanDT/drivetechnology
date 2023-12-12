@@ -8,21 +8,23 @@
 }
 
 html {
-  overflow-x: initial !important;
+  /* overflow-x: initial !important; */
+  width: 100vw;
+}
+.false {
+  /* display: none; */
+  /* visibility: hidden; */
 }
 
-html,
-body {
+html, body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: "Inter", sans-serif;
-  font-family: "Oswald", sans-serif;
 }
 
 .img-container img {
   width: 100% !important;
   height: 100% !important;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 .home-linear-grad {
   background: linear-gradient(
@@ -40,14 +42,14 @@ body {
     #ffffff 97.29%
   );
 }
-.linear-grad {
+/* .linear-grad {
   background: linear-gradient(
     180deg,
     #424248 9.85%,
     #252525 47.46%,
     #303031 82.43%
   );
-}
+} */
 .icon-grad {
   background: linear-gradient(180deg, #c1328c 0%, #fa8e22 100%);
 }
@@ -55,7 +57,9 @@ body {
 .icon-gradient {
   background: linear-gradient(180deg, #c1328c 0%, #fa8e22 100%);
 }
-
+.peacemaker-grad {
+  background: linear-gradient(180deg, #265565 0%, #288fb1 47.92%, #265565 100%);
+}
 .calendly-inline-widget {
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Microsoft Edge */
@@ -67,9 +71,10 @@ body {
 }
 
 .box:after {
-  content: " ";
+  content: "";
   height: 224px;
-  border-bottom: 23vh solid #434344;
+  /* border-bottom: 23vh solid #434344; */
+  background-image: url('../assets/bg-images/design2.png');
   border-left: 55vw solid transparent;
   z-index: -1;
   width: 0;
@@ -77,6 +82,31 @@ body {
   right: 0;
   top: 0;
 }
+@media only screen and (min-width: 1750px) {
+  .box:after {
+  content: "";
+  height: 224px;
+  background-image: url('../assets/bg-images/design2.png');
+  border-left: 100vw solid transparent;
+  z-index: -1;
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+}
+/* .box:after {
+  content: " ";
+  height: 224px;
+  border-left: 55vw solid transparent;
+  z-index: -1;
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
 
 .scroll-to-top {
   position: fixed;
@@ -84,27 +114,25 @@ body {
   bottom: 20px;
   right: 20px;
   padding: 10px;
-  background-color: rgb(35, 25, 25);
+ background-color: #2e376a;
   color: white;
   border: none;
   border-radius: 48px;
   width: 50px;
-  height:50px;
+  height: 50px;
   cursor: pointer;
 }
 
-
-
-.button{
+.button ,.button2{
   position: relative;
-  transition: all .35s;
+  transition: all 0.35s;
 }
-.button{
+.button ,.button2{
   position: relative;
   z-index: 2;
 }
 
-.button:after{
+.button:after {
   z-index: -1;
   position: absolute;
   content: "";
@@ -112,19 +140,32 @@ body {
   left: 0;
   width: 0;
   height: 100%;
-  transition: all .35s;
-  background-color: #4d4d53;
+  transition: all 0.35s;
+  background-color: #20274D;
+}
+
+.button2:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.35s;
+  /* background-color: transparent; */
 }
 
 
-.button:hover{
+.button:hover {
   color: white;
-
-
 }
 
+.button:hover:after {
+  width: 100%;
+}
 
-.button:hover:after{
+.button2:hover:after {
   width: 100%;
 }
 
@@ -133,3 +174,148 @@ body {
     color-scheme: dark;
   }
 } */
+.sercardbtn {
+  position: relative;
+  transition: all 0.35s;
+}
+.sercardbtn {
+  position: relative;
+  z-index: 2;
+}
+
+.sercardbtn:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.35s;
+  background-color: #fff;
+}
+
+.sercardbtn:hover {
+  color: #20274D;
+}
+
+.sercardbtn:hover:after {
+  width: 100%;
+}
+
+/* //////////////////PeaceMakePage/////////////////////// */
+
+/* PeaceMaker Styling Starts here */
+.Peacemaker-img{
+  background-image: url(../assets/portfolio/peacmaker//peaceMaker\ Image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+
+
+.peacemaker-main {
+  background: linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%);
+
+}
+.Numbers-main{
+  background-image: linear-gradient(180deg, #448297 0%, #288FB1 47.92%, #265565 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* PeaceMaker Styling Ends here */
+
+
+/* About Project Styling starts here */
+.AboutProject-main{
+  background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+/* About Project Styling Ends here */
+
+/* Project Timeline Styling starts here */
+.Project-timeline-main{
+  background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+/* Project Timeline Styling Ends here */
+
+/* style guide styling starts here */
+.styleguide-main{
+  background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+.Typography-main{
+  background: var(--Background-Peacemaker, linear-gradient(180deg, #2b7c97 0%, #288FB1 47.92%, #265565 100%));
+}
+.card-main{
+  background: var(--Background-Peacemaker, linear-gradient(180deg, #3f8ca6 0%, #3f8ca6 0%, #3f8ca6 0%));
+}
+.card{
+      background: var(--Background-Peacemaker, linear-gradient(180deg, #a9c3cc 0%, #a9c3cc 0%, #a9c3cc 0%));
+}
+/* style guide styling Ends here */
+
+/* Problem statement styling starts here */
+.Problemstatement-main{
+  background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+/* Problem statement styling Ends here */
+
+/* App Store styling starts here */
+.App-store-main{
+  background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+/* App Store styling Ends here */
+
+/* Hide scrollbar but still allow scrolling */
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: If you want to style the container to make it look like there's no scrollbar */
+/* You can adjust these styles according to your design */
+.overflow-x-auto {
+  -ms-overflow-style: none; /* Hides scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
+
+/* Footer Styling Starts here */
+.Footer-main{
+  background: var(--Background-Peacemaker, linear-gradient(180deg, #265565 0%, #288FB1 47.92%, #265565 100%));
+}
+
+/* ////////////////////////////////////////////// */
+
+.PhoneInputInput {
+	/* The phone number input stretches to fill all empty space */
+	flex: 1;
+	min-width: 0;
+  outline: none;
+}
+
+.blogs-page-main{
+  background-image: url('../assets/bg-images/Contact\ sections.png');
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+/* //// */
+@media only screen and (min-width: 2100px) {
+  .query {
+    /* background-color: #288FB1; */
+    height: 500px;
+    /* width: 800px; */
+  }
+  .query img {
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain; */
+  }
+}
+/* ....cardMedia */
+@media only screen and (min-width: 2000px) {
+  .cardMedia{
+    height: 1000px !important;
+  }
+}

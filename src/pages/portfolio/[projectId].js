@@ -3,12 +3,12 @@ import { useRouter } from "next/router";
 
 import ProjectDetail from "@/components/portfolio/ProjectDetail";
 
-import img1 from "../../assets/ourwork/img1.png";
-import img2 from "../../assets/ourwork/img2.png";
-import img3 from "../../assets/ourwork/img3.png";
-import img4 from "../../assets/ourwork/img4.png";
-import img5 from "../../assets/ourwork/img5.png";
-import img6 from "../../assets/ourwork/img6.png";
+// import img1 from "../../assets/ourwork/img1.png";
+// import img2 from "../../assets/ourwork/img2.png";
+// import img3 from "../../assets/ourwork/img3.png";
+// import img4 from "../../assets/ourwork/img4.png";
+// import img5 from "../../assets/ourwork/img5.png";
+// import img6 from "../../assets/ourwork/img6.png";
 
 import { fetchPortfolioByISlug } from "api";
 import { richTextReducer } from "helpers/utils";
@@ -16,7 +16,7 @@ import { richTextReducer } from "helpers/utils";
 const DATA = [
   {
     id: "d1",
-    img: img1,
+    // img: img1,
     founder: "Juan Smith",
     title: "The Project Title",
     subTitle:
@@ -25,7 +25,7 @@ const DATA = [
   },
   {
     id: "d2",
-    img: img2,
+    // img: img2,
     founder: "Juan Smith",
     title: "The Project Title",
     subTitle:
@@ -34,7 +34,7 @@ const DATA = [
   },
   {
     id: "d3",
-    img: img3,
+    // img: img3,
     founder: "Juan Smith",
     title: "The Project Title",
     subTitle:
@@ -43,7 +43,7 @@ const DATA = [
   },
   {
     id: "d4",
-    img: img4,
+    // img: img4,
     founder: "Juan Smith",
     title: "The Project Title",
     subTitle:
@@ -52,7 +52,7 @@ const DATA = [
   },
   {
     id: "d5",
-    img: img5,
+    // img: img5,
     founder: "Juan Smith",
     title: "The Project Title",
     subTitle:
@@ -61,7 +61,7 @@ const DATA = [
   },
   {
     id: "d6",
-    img: img6,
+    // img: img6,
     founder: "Juan Smith",
     title: "The Project Title",
     subTitle:

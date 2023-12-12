@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import WhyUs from "@/components/Home/WhyUs";
 import Hero from "@/components/Home/Hero";
 import Services from "@/components/Home/Services";
 import Layout from "@/components/Layout/Layout";
@@ -9,8 +8,6 @@ import Partnership from "@/components/Home/Partnership";
 import Blogs from "@/components/Home/Blogs";
 
 import bgImage from "../assets/services/bg.png";
-import ourWorkImage from "../assets/ourwork/design.png";
-
 import {
   fetchBlogs,
   fetchCategories,
@@ -18,11 +15,17 @@ import {
   fetchPartnersWithFilter,
   fetchPortfolios,
   fetchServices,
+  fetchDevelopments
 } from "api";
 import Loader from "@/components/UI/Loader";
+import Review from "@/components/Home/Review";
+import Mission from "@/components/Home/Mission";
+import DigitalServicesTow from "@/components/Home/DigitalServicesTow";
+import Bookconsultation from "@/components/Home/Bookconsultation";
 
 const HomePage = () => {
   const [services, setServices] = useState([]);
+  const [developments, setDevelopments] = useState([]);
   const [partners, setPartners] = useState([]);
   const [partnerType, setPartnerType] = useState("core");
   const [blogs, setBlogs] = useState([]);
@@ -48,6 +51,8 @@ const HomePage = () => {
       }
       let servicesResponse = await fetchServices(4);
       setServices(servicesResponse?.data?.data);
+      let developmentResponse = await fetchDevelopments(4);
+      setDevelopments(developmentResponse?.data?.data);
       let partnersResponse = await fetchPartnersWithFilter("core", 3);
       setPartners(partnersResponse?.data?.data);
       let blogsResponse = await fetchBlogs(4);
@@ -66,7 +71,6 @@ const HomePage = () => {
         portfolioName,
         6
       );
-
       setPortfolios(portfoliosResponse?.data?.data);
     } catch (error) {
       console.log(error);
@@ -87,9 +91,14 @@ const HomePage = () => {
   return (
     <Layout>
       <Hero heroBox={heroBox} />
-      <Services services={services} name="Digital Services" image={bgImage} />
-      <WhyUs />
-      <OurWorks
+      <Mission />
+      <Services services={services} count1={ 0 }  count2={ 2 } name="Digital Services" image={bgImage} />
+      {/* <Services services={services} name="Digital Services" image={bgImage} /> */}
+      <Services services={developments} count1={1} count2={2} name="Development" image={bgImage} />
+      <Bookconsultation/>
+      <DigitalServicesTow />
+      {/* <WhyUs /> */}
+      {/* <OurWorks
         image={ourWorkImage}
         categories={categories}
         portfolios={portfolios}
@@ -97,13 +106,17 @@ const HomePage = () => {
         setSelectedCategory={setSelectedCategory}
         portfolioName={portfolioName}
         setPortfolioName={setPortfolioName}
+      /> */}
+      <OurWorks
       />
-      <Partnership
+      {/* <Work /> */}
+      {/* <Partnership
         partners={partners}
         getPartners={getPartners}
         partnerType={partnerType}
-      />
+      /> */}
       <Blogs blogs={blogs} />
+      <Review Review={Review} />
     </Layout>
   );
 };

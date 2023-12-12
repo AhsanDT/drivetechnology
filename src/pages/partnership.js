@@ -8,7 +8,6 @@ import { fetchPartnersWithFilter } from "api";
 const core = () => {
   const [partners, setPartners] = useState([]);
   const [partnerType, setPartnerType] = useState("core");
-
   useEffect(() => {
     getPartners("core");
   }, []);
@@ -25,14 +24,16 @@ const core = () => {
   };
 
   return (
-    <Layout>
+    <>
+    {/* <Layout>
       <Partnership
         partners={partners}
-        className="top-[130px] lg:top-[140px] pb-[100px]"
+        className="top-28 md:top-20 pb-[80px] 2xl:min-h-[100vh] lg:top-10 lg:pb-20"
         getPartners={getPartners}
         partnerType={partnerType}
       />
-    </Layout>
+    </Layout> */}
+    </>
   );
 };
 

@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from "react";
-
+import React from "react";
 import Services from "@/components/Home/Services";
 import Layout from "@/components/Layout/Layout";
-
 import bgImage from "../assets/services/bg.png";
-
 import { fetchDevelopments } from "api";
+import Heading from "@/components/Home/Heading";
+import Bookconsultation from "@/components/Home/Bookconsultation";
+
 
 const development = ({ developments = [] }) => {
+
   return (
     <Layout>
-      <Services services={developments} name="Development" image={bgImage} />
+      <Heading heading="Development" />
+      <Services services={developments} count1={ 1 }  count2={ 3 } name="Development" image={bgImage} />
+      <Bookconsultation/>
     </Layout>
   );
 };

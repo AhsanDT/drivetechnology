@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import Blogs from "@/components/Blogs/Blogs";
+import Blog from "@/components/Blogs/Blogs";
 import Layout from "@/components/Layout/Layout";
 
 import { fetchBlogs } from "api";
@@ -34,11 +34,11 @@ const blogs = () => {
 
   return (
     <Layout>
-      <Blogs
-        blogs={blogs}
-        totalCount={totalCount}
-        onPageChange={onPageChange}
-      />
+    <Blog
+     blogs={blogs}
+     totalCount={totalCount}
+     onPageChange={onPageChange}
+     />
     </Layout>
   );
 };

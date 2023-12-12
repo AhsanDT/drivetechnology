@@ -15,11 +15,14 @@ module.exports = {
         "oswald": ['Oswald', "sans-serif"],
         "roboto": ['Roboto', "sans-serif"],
         "poppins": ['Poppins', "sans-serif"],
+        "gilroy": ['Gilroy', "sans-serif"], // Add Gilroy font family
+        "norwester": ['Norwester', "sans-serif" ],
         sans: ["Inter", "sans-serif"],
-        
+        "inter": ["Inter", "Gilroy"],
       },
-  
+      
     },
+    
     screens: {
       
         'sm': '640px',
