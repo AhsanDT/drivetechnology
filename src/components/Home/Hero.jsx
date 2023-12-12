@@ -15,8 +15,8 @@ const Hero = ({ heroBox }) => {
     >
       <div className="w-full xl:max-w-[] min-h-[100vh]  ">
         <div className={`img-container w-full h-[100%] absolute z-[-1]`}>
-          <Image src={heroImage} alt="img" />
-          {/* {heroBox && (
+          {/* <Image src={heroImage} alt="img" /> */}
+          {heroBox && (
             <Image
               src={heroBox?.attributes?.image?.data?.attributes?.url}
               // unoptimized={true}
@@ -27,7 +27,7 @@ const Hero = ({ heroBox }) => {
               height={heroBox?.attributes?.image?.data?.attributes?.height}
               width={heroBox?.attributes?.image?.data?.attributes?.width}
             />
-          )} */}
+          )}
         </div>
 
         <div
@@ -43,10 +43,12 @@ const Hero = ({ heroBox }) => {
                 textAlignLast: "center",
               }}
               className="font-poppins text-white font-bold text-shadow-lg text-[25px] sm:text-[33px] text-center lg:text-[50px] tracking-[0] sm:tracking-[1px] sm:leading-[35px] lg:leading-[73px] lg:w-[1000px]"
-              // dangerouslySetInnerHTML={{
-              //   __html: richTextReducer(heroBox?.attributes?.heading || ""),
-              // }}
-            >We help you drive your business to <br className="hidden sm:block" /> success</span>
+              dangerouslySetInnerHTML={{
+                __html: richTextReducer(heroBox?.attributes?.heading || ""),
+              }}
+            >
+              {/* We help you drive your business to <br className="hidden sm:block" /> success */}
+              </span>
             <p
               data-aos="fade-down"
               className="font-roboto text-white text-center

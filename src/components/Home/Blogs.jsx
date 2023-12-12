@@ -35,13 +35,13 @@ const Blogs = ({ blogs }) => {
                   <div className="img-container w-[230px] h-[210px]">
                     {blog?.attributes && (
                       <Image
-                        // src={
-                        //   blog?.attributes?.thumbnail?.data?.attributes?.url
-                        // }
-                        // alt="img"
-                        // width={100}
-                        // height={100}
-                        src={blogimg}
+                        src={
+                          blog?.attributes?.thumbnail?.data?.attributes?.url
+                        }
+                        alt="img"
+                        width={900}
+                        height={900}
+                        // src={blogimg}
                       />
                     )}
                   </div>

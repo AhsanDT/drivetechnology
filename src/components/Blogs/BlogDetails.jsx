@@ -6,6 +6,8 @@ import Loader from "../UI/Loader";
 import WhiteLoader from "../UI/WhiteLoader";
 
 const BlogDetails = ({ blog, onLike }) => {
+  console.log(blog)
+  console.log(blog?.attributes?.cover?.data?.attributes?.url)
   return (
     <Layout>
       <section className="flex justify-center py-[50px] px-[30px] md:px-[130px]  relative top-[50px]">
@@ -42,10 +44,10 @@ const BlogDetails = ({ blog, onLike }) => {
                     <Image
                     // unoptimized={true}
                     // src={`http://localhost:1337${blog?.attributes?.thumbnail?.data?.attributes?.url}`}
-                    src={blog?.attributes?.thumbnail?.data?.attributes?.url}
+                    src={blog?.attributes?.cover?.data?.attributes?.url}
                       alt="img"
-                      width={100}
-                      height={100}
+                      width={1200}
+                      height={1200}
                     />
                   )}
                 </div>

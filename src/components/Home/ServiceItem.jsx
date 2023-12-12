@@ -19,12 +19,12 @@ const ServiceItem = ({ service, id }) => {
         <Image
           // unoptimized={true}
           // src={`http://localhost:1337${service?.thumbnail?.data?.attributes?.url}`}
-          // src={service?.thumbnail?.data?.attributes?.url}
-          src={bg}
-          // width={100}
-          // height={100}
+          src={service?.thumbnail?.data?.attributes?.url}
+          // src={bg}
+          width={960}
+          height={832}
           alt="img"
-          className="w-[100%] h-[100%]"
+          className="w-[100%] h-[100%] object-cover"
         />
       </div>
       

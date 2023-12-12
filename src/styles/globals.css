@@ -86,7 +86,7 @@ html, body {
   .box:after {
   content: "";
   height: 224px;
-  background-image: url('../assets/bg-images/design2.png');
+  /* background-image: url('../assets/bg-images/design2.png'); */
   border-left: 100vw solid transparent;
   z-index: -1;
   width: 0;

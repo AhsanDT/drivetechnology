@@ -49,9 +49,9 @@ const HomePage = () => {
       if (heroBoxResponse?.data?.data?.length) {
         setHeroBox(heroBoxResponse?.data?.data[0]);
       }
-      let servicesResponse = await fetchServices(4);
+      let servicesResponse = await fetchServices(2);
       setServices(servicesResponse?.data?.data);
-      let developmentResponse = await fetchDevelopments(4);
+      let developmentResponse = await fetchDevelopments(2);
       setDevelopments(developmentResponse?.data?.data);
       let partnersResponse = await fetchPartnersWithFilter("core", 3);
       setPartners(partnersResponse?.data?.data);

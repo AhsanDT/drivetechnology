@@ -5,7 +5,7 @@ import ScrollToTop from "../ScrollToTop";
 import Footer from "./Footer";
 import Header from "./Header";
 
-const Layout = ({ children, showFooter = true , showIdea = true}) => {
+const Layout = ({ children, showFooter = true, showIdea = true }) => {
   const [services, setServices] = useState([]);
   const [developments, setDevelopments] = useState([]);
 

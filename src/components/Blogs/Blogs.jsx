@@ -8,6 +8,7 @@ import Button from "../UI/Button";
 // import bg from "../../assets/services/check.png";
 
 const Blogs = ({ blogs, totalCount, onPageChange }) => {
+  console.log(blogs)
   return (
     <>
       <section className="w-full flex items-center justify-center relative top-[5px] pt-[130px] pb-[10px] lg:py-[130px] blogs-page-main">
@@ -42,15 +43,15 @@ const Blogs = ({ blogs, totalCount, onPageChange }) => {
                     >
                       <div className="img-container w-[full] h-[210px]">
                         <Image
-                          // unoptimized={true}
+                          unoptimized={true}
                           // src={`http://localhost:1337${blog?.attributes?.thumbnail?.data?.attributes?.url}`}
-                          // src={
-                          //   blog?.attributes?.thumbnail?.data?.attributes?.url
-                          // }
-                          // alt="img"
-                          // width={100}
-                          // height={100}
-                          src={blogimg1}
+                          src={
+                            blog?.attributes?.thumbnail?.data?.attributes?.url
+                          }
+                          alt="img"
+                          width={1200}
+                          height={1200}
+                          // src={blogimg1}
                         
                         />
                       </div>

@@ -276,7 +276,7 @@ const Footer = ({ services, developments }) => {
                   {" "}
                   <li className="font-poppins text-[16px]">Services</li>
                 </Link>
-                <Link href={"/service"}>
+                {/* <Link href={"/service"}>
                   <li className="w-[95px] text-[#ffffff] text-opacity-[50%] hover:underline">
                     Digital Marketing Services
                   </li>
@@ -287,8 +287,8 @@ const Footer = ({ services, developments }) => {
                     Back Office Services
                   </li>
                   </ul>
-                </Link>
-                {/* {services?.slice(0, 10)?.map((service, ind) => (
+                </Link> */}
+                {services?.slice(0, 10)?.map((service, ind) => (
                   <Link
                     href={`/services/#${service?.attributes?.title?.replaceAll(
                       " ",
@@ -300,17 +300,17 @@ const Footer = ({ services, developments }) => {
                       {service?.attributes?.title}
                     </li>
                   </Link>
-                ))} */}
+                ))}
               </ul>
             </div>
 
             <div className="xl:w-[112px]">
               <ul className="flex flex-col gap-y-[24px]">
-                <Link href={"/development"}>
+                 <Link href={"/development"}>
                   {" "}
                   <li className="font-poppins text-[16px]">Development</li>
                 </Link>
-                <Link href={"/development"}>
+                {/* <Link href={"/development"}>
                   <li className="w-[80px] text-[#ffffff] text-opacity-[50%] hover:underline">
                     Mobile & Web Development
                   </li>
@@ -319,8 +319,8 @@ const Footer = ({ services, developments }) => {
                   <li className="w-[80px] text-[#ffffff] text-opacity-[50%] hover:underline">
                     AI & Machine Learning
                   </li>
-                </Link>
-                {/* {developments?.slice(0, 10)?.map((development, ind) => (
+                </Link>  */}
+                {developments?.slice(0, 10)?.map((development, ind) => (
                   <Link
                     href={`/development/#${development?.attributes?.title?.replaceAll(
                       " ",
@@ -332,7 +332,7 @@ const Footer = ({ services, developments }) => {
                       {development?.attributes?.title}
                     </li>
                   </Link>
-                ))} */}
+                ))}
               </ul>
             </div>
 
